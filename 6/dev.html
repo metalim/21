@@ -1,0 +1,44 @@
+<!doctype html>
+<html><head>
+	<title>Collapse</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="Maxim Litvinov">
+	<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+	<style>
+		html {
+			width: 100%;
+			height: 100%;
+		}
+		body {
+			margin:0;
+			position: absolute;
+			text-align: center;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			border: solid gray 5px;
+		}
+		#canvas {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+</head><body>
+	<audio autoplay loop>
+		<source src="audio/pamgaea.mp3" type="audio/mpeg">
+		<source src="audio/pamgaea.ogg" type="audio/ogg">
+		<!--
+		"Pamgaea" Kevin MacLeod (incompetech.com) 
+		Licensed under Creative Commons: By Attribution 3.0
+		http://creativecommons.org/licenses/by/3.0/
+		-->
+	</audio>
+	<canvas id="canvas">update your browser</canvas>
+	<script type="text/coffeescript" src="collapse.coffee"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/coffee-script/1.6.3/coffee-script.min.js"></script>
+</body></html>

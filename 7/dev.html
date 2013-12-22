@@ -1,0 +1,60 @@
+<!doctype html>
+<html><head>
+	<title>Match-3</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="author" content="Maxim Litvinov">
+	<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
+	<style>
+		* {
+		    -webkit-touch-callout: none;
+		    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+		}
+		html {
+			height: 100%;
+			width: 100%;
+		}
+		body {
+			margin: 0;
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			border: 5px gray solid;
+		}
+		div {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			background-image: url('img/background.jpg');
+			background-size: cover;
+		}
+		canvas {
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			background: rgba(50,50,50,0.7);
+		}
+	</style>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+</head><body>
+	<div><canvas id="canvas">update your browser</canvas></div>
+	<!--
+		"Killing Time" Kevin MacLeod (incompetech.com) 
+		Licensed under Creative Commons: By Attribution 3.0
+		http://creativecommons.org/licenses/by/3.0/
+	-->
+	<audio autoplay loop>
+		<source src="audio/killing_time.mp3" type="audio/mpeg">
+		<source src="audio/killing_time.ogg" type="audio/ogg">
+	</audio>
+
+	<script type="text/coffeescript" src="match3.coffee"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/coffee-script/1.6.3/coffee-script.min.js"></script>
+</body></html>
